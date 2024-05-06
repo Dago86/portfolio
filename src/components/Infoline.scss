@@ -1,0 +1,88 @@
+/* In InfoLine.css */
+.info-line {
+  margin: auto;
+  width: 100%; /* Usa il 100% per schermi più piccoli */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Cambia in colonna per dispositivi piccoli */
+  gap: 10px; /* Riduci lo spazio */
+}
+
+
+.subject {
+  font-weight: bold;
+  width: 80%; /* Assicurati che usi tutta la larghezza disponibile */
+  font-size: 1.8em; /* Riduci la dimensione del font per dispositivi piccoli */
+  flex: 0.4;
+}
+
+.description {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: justify;
+  flex: 1;
+  font-size: 1em; /* Riduci la dimensione del font */
+  // padding-left: 10px; /* Riduci il padding */
+  .link {
+      margin-top: 10px;
+      font-weight: bold;
+  }
+}
+
+
+@media (min-width: 768px) {
+/* Stili per schermi più grandi */
+.info-line {
+    width: 60%; /* Usa il 60% per schermi grandi */
+    flex-direction: row; /* Layout orizzontale per dispositivi più grandi */
+    gap: 20%;
+}
+
+.subject {
+    width: 30%; /* Larghezza fissa per il soggetto */
+    font-size: 2.6em;
+}
+
+.description {
+    padding-left: 20px;
+    font-size: 1.3em;
+}
+}
+
+  
+
+ /* Stili base per il link */
+.link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  // font-size: 16px;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s;
+}
+
+/* Stili per la pseudo-elemento ::after che crea la sottolineatura */
+.link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+  left: 0;
+  bottom: -2px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Cambia lo scale di ::after a 1 quando il link è hoverato, mostrando la linea */
+.link:hover::after,
+.link:focus::after {
+  transform: scaleX(1);
+}
+
+/* Opzionale: Cambia il colore del testo al passaggio del mouse */
+.link:hover,
+.link:focus {
+  color: blue;
+}

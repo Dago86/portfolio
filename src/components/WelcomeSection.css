@@ -1,0 +1,18 @@
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Questo assicura che la sezione occupi l'intera altezza della viewport, regola secondo necessità */
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome-section {
+    height: 40vh; /* Altezza ridotta per dispositivi mobili */
+  }
+}
+
+.central-image {
+  max-width: 100%; /* Assicura che l'immagine sia responsive e non esca dal suo contenitore */
+  max-height: 80vh; /* Limita l'altezza dell'immagine per assicurarsi che si adatti bene alla maggior parte degli schermi */
+  object-fit: cover; /* Questa proprietà assicura che l'immagine copra l'area designata senza perdere le proporzioni */
+}

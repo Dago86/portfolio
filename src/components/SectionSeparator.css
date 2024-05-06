@@ -1,0 +1,7 @@
+/* In SectionSeparator.css */
+.section-separator {
+    height: 2px;
+    background-color: #ccc;
+    width: 80%;  /* Regola questa percentuale in base alla larghezza che preferisci */
+    margin: 50px auto;  /* Centra il separatore orizzontalmente e aggiunge spazio sopra e sotto */
+  }

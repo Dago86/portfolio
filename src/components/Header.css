@@ -1,0 +1,54 @@
+.header {
+  background-color: white;
+  color: black;
+  padding: 10px 0; /* Ridotto per schermi piccoli */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 10px; /* Aggiunto padding ai lati per non attaccare al bordo dello schermo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permette agli elementi di andare a capo se necessario */
+}
+
+h2 { /* Modificato da h1 a h2 per coerenza col tuo codice originale */
+  margin: 0;
+  font-size: 1.4rem; /* Dimensione ridotta per schermi piccoli */
+}
+
+nav .nav-link {
+  color: black;
+  text-decoration: none;
+  margin-left: 10px; /* Margine ridotto */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+@media (min-width: 600px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .container {
+    margin: 0 auto; /* Centrato correttamente senza padding ai lati */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Dimensione originale per schermi più grandi */
+  }
+
+  nav .nav-link {
+    margin-left: 20px;
+  }
+}
+
+.header-hidden {
+  top: -100px; /* Adegua questo valore in base all'altezza del tuo header */
+}
