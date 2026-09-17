@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6351677d.css",
-    "main.js": "/portfolio/static/js/main.6f302b8d.js",
+    "main.css": "/portfolio/static/css/main.693fb515.css",
+    "main.js": "/portfolio/static/js/main.d48641f5.js",
     "static/js/453.cbbcd9d1.chunk.js": "/portfolio/static/js/453.cbbcd9d1.chunk.js",
-    "static/media/me.png": "/portfolio/static/media/me.17a52aa9cd6ea05c3f0a.png",
-    "static/media/midjourney2.png": "/portfolio/static/media/midjourney2.e8f22899cb96f208b652.png",
-    "static/media/midjourney.png": "/portfolio/static/media/midjourney.702fab7e9b5ba3acadfd.png",
-    "static/media/image4.png": "/portfolio/static/media/image4.7eb66584995053dc0f84.png",
-    "static/media/image5.png": "/portfolio/static/media/image5.89d46a5e75088ca87208.png",
-    "static/media/mid3.webp": "/portfolio/static/media/mid3.9c1b02afb64b94d186b3.webp",
+    "static/media/bologna.webp": "/portfolio/static/media/bologna.22672132ca1e859b5ca7.webp",
+    "static/media/rovine.webp": "/portfolio/static/media/rovine.648f9d9928c75f612fa0.webp",
+    "static/media/bar.webp": "/portfolio/static/media/bar.ba13f2a96e286820f675.webp",
+    "static/media/nostalgia-e-rivoluzione.webp": "/portfolio/static/media/nostalgia-e-rivoluzione.55ecdb629ef13f67c462.webp",
+    "static/media/cavaliere.webp": "/portfolio/static/media/cavaliere.fd8ca8373c5de63c2cb4.webp",
+    "static/media/diego-giappone.webp": "/portfolio/static/media/diego-giappone.d089f369a0b1a292719e.webp",
+    "static/media/notte.webp": "/portfolio/static/media/notte.65400f08dfbb53a1168e.webp",
+    "static/media/diego-giappone-small.webp": "/portfolio/static/media/diego-giappone-small.c4a666cc62cc17bb984e.webp",
     "index.html": "/portfolio/index.html",
-    "main.6351677d.css.map": "/portfolio/static/css/main.6351677d.css.map",
-    "main.6f302b8d.js.map": "/portfolio/static/js/main.6f302b8d.js.map",
+    "main.693fb515.css.map": "/portfolio/static/css/main.693fb515.css.map",
+    "main.d48641f5.js.map": "/portfolio/static/js/main.d48641f5.js.map",
     "453.cbbcd9d1.chunk.js.map": "/portfolio/static/js/453.cbbcd9d1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6351677d.css",
-    "static/js/main.6f302b8d.js"
+    "static/css/main.693fb515.css",
+    "static/js/main.d48641f5.js"
   ]
 }
