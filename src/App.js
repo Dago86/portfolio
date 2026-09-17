@@ -1,50 +1,41 @@
-import React from "react";
-import "./App.css";
-import Header from "./components/Header";
-import WelcomeSection from "./components/WelcomeSection";
-import About from "./components/About";
-import SectionSeparator from "./components/SectionSeparator";
-import InfoLine from "./components/Infoline";
-import ContactSection from "./components/ContactSection";
-import ImageSlider from "./components/ImageSlider";
+import React from 'react';
+import './App.css';
+import portrait from './assets/diego-giappone.webp';
+import portraitSmall from './assets/diego-giappone-small.webp';
+import { BookSection, NewsletterSection, ProjectsSection, GallerySection } from './components/PortfolioSections';
+import ContactSection from './components/ContactSection';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <WelcomeSection />
-        <About />
-        <SectionSeparator />
-        <InfoLine
-          subject="Writer"
-          description="I have been writing for cultural magazines for years! I've covered a lot of topics - such as music, literature, mass media - and lately, I've been mainly collaborating with Indiscreto, writing about video games and Japanese stuff."
-          link="My Linktree ;)"
-          url="https://linktr.ee/diegodeangelis"
-        />
-        <InfoLine
-          subject="AI Art"
-          description="I have two projects where I create images with artificial intelligence. I mostly use DALL-E and Midjourney!"
-          link="My main project about Bologna"
-          url="https://www.instagram.com/chatgpt.disegna_bologna/"
-        />
-        <InfoLine
-          subject="Software Dev"
-          description="I mostly deal with writing frontend code
-          (in React, which I also used to make this silly site!) for a company
-          called Develer."
-          link="Go to my company"
-          url="https://www.develer.com/"
-        />
-        <SectionSeparator />
-        <p className="title-images">Images created with Midjourney v6</p>
-        <div className="image-container">
-          <ImageSlider />
-        </div>
-        <ContactSection />
+    <div id="top" className="site-shell">
+      <a className="skip-link" href="#main">Vai al contenuto</a>
+      <header className="site-header wrap">
+        <a className="wordmark" href="#top">Diego De Angelis<span aria-hidden="true">.</span></a>
+        <nav aria-label="Navigazione principale">
+          <a href="#libro">Libro</a><a href="#substack">Substack</a><a href="#progetti">Progetti</a><a href="#contact">Contatti <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+      <main id="main" tabIndex="-1">
+        <section id="about" className="hero wrap" aria-labelledby="hero-title">
+          <div className="hero-copy">
+            <p className="eyebrow"><span className="red-dot" aria-hidden="true" /> Scrittura, codice e altri immaginari</p>
+            <h1 id="hero-title">Diego<br />De Angelis<span className="red">.</span></h1>
+            <p className="hero-statement">Scrivo di cultura,<br />sviluppo interfacce,<br /><em>esploro immagini.</em></p>
+            <p className="hero-note">Tra cultura pop, mondi digitali e una certa<br className="desktop-break" /> passione per il Giappone.</p>
+            <a className="text-link" href="#libro">Entra nel mio mondo <span aria-hidden="true">↓</span></a>
+          </div>
+          <figure className="portrait">
+            <img src={portrait} srcSet={`${portraitSmall} 640w, ${portrait} 1200w`} sizes="(max-width: 700px) 92vw, 46vw" width="1632" height="1186" alt="Diego davanti a due distributori automatici di bevande in Giappone" fetchpriority="high" />
+            <figcaption><span className="caption-index">01 / Giappone</span><span>Io e due <i>jidōhanbaiki</i>.<br />I distributori automatici, per gli amici.</span></figcaption>
+          </figure>
+        </section>
+        <BookSection />
+        <NewsletterSection />
+        <ProjectsSection />
+        <GallerySection />
       </main>
+      <ContactSection />
     </div>
   );
 }
-
 export default App;
